@@ -1,0 +1,24 @@
+#newTask
+  | Title: 
+  input#name(type='text')
+  br
+  | Request Date:
+  input#date(type='date')
+  br
+  #rep
+    | Representative(s):
+    input(type='radio', value='Isaac') Isaac
+    input(type='radio', value='Young') Young
+    input(type='radio', value='Paul') Paul
+    input(type='radio', value='Abe') Abe
+  br
+  #cat
+    | Category:
+    input(type='radio', value='Website / Manual') Website / Manual
+    input(type='radio', value='Customer Service') Customer Service
+    input(type='radio', value='Self Development') Self Development
+    input(type='radio', value='Sales / Advertisement') Sales / Advertisement
+    input(type='radio', value='Office') Office
+    input(type='radio', value='Other Suggestions') Other Suggestions
+  br
+  input#submit(type='submit')

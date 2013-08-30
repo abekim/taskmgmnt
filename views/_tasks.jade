@@ -1,0 +1,18 @@
+.taskList
+  each task, i in tasks
+    if task.isComplete
+      .task.completed
+    else
+      .task
+      h3 #{task.title}
+      | Category: #{task.category}   
+      | Since: #{task.requestDate}
+      br
+      | Representative(s):
+      each user, i in task._users
+        if (i == task._users.length - 1)
+          #{user.name}
+        else
+          #{user.name},
+
+
